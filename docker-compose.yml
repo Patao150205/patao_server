@@ -1,2 +1,12 @@
 version: '3'
 services:
+  reverse-proxy:
+    build: ./
+    container_name: reverse-proxy
+    ports:
+      - 8000:80
+    networks:
+      - proxy_network
+networks:
+  proxy_network:
+    external: true

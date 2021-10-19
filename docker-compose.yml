@@ -5,8 +5,12 @@ services:
     container_name: reverse-proxy
     ports:
       - 80:80
+      # - 443:443
     networks:
       - proxy_network
+    # volumes
+    # - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    # - '/etc/letsencrypt:/etc/letsencrypt'
 networks:
   proxy_network:
     external: true

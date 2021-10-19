@@ -1,4 +1,0 @@
-nginx.prod.conf
-Dockerfile.prod
-docker-compose.prod.yaml
-drop-except-jp.sh

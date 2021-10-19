@@ -1,0 +1,7 @@
+FROM nginx:1.21.3
+COPY ./nginx/nginx.prod.conf  /etc/nginx/nginx.conf
+RUN apt-get update
+ENV TZ=Asia/Tokyo
+RUN mkdir -p /var/www/certbot/patapatao.com
+
+EXPOSE 80 443

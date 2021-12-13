@@ -12,6 +12,7 @@ services:
       - proxy_network
     volumes: 
       - /etc/letsencrypt:/etc/letsencrypt
+    restart: always
 networks:
   proxy_network:
     external: true
